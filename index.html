@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DealShip</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+  <body>
+
+	<header>
+	    <div class="title">
+        <nav>
+          <logo>
+            <img src="logo.png" alt="logo-image" width="130px"/>
+          </logo>
+          <a id="nav-home">Home</a>
+          <a id="nav-orders">Orders</a>
+          <a id="nav-tracking">Tracking</a>
+        </nav>
+        
+        <div class="user-profile" id="user-profile">
+          <span class="divider" id="divider">
+            <img id="notification" src="notification.png" alt="notification" width="30px";/>
+            <img id="hover-notification" src="hover-notification.png" alt="notification" width="30px";/>
+          </span>
+          <img src="https://i.imgur.com/sLjSxu5.jpg" 
+          class="pro-pic" />
+          <span class="salute">
+            Hi, Samuel
+          </span>
+          <i class="material-icons" id="arrow_drop_down">
+              arrow_drop_down
+            </i>
+        </div>
+        <span class="material-icons" id="hamburger">
+          menu
+        </span>
+      </div>
+      
+      <div class="progress">
+        <div>
+          <div>
+            <span class="material-icons current-progress">check_circle_outline</span>
+            <span>SHIPPING</span>
+          </div>
+          <div>
+            <div class="progress-spot">2</div>
+            <span>PERSONAL DETAILS</span>
+          </div>
+          <div>
+            <div class="progress-spot">3</div>
+            <span>PAYMENT</span>
+          </div>
+          <div>
+            <div class="progress-spot">4</div>
+            <span>CONFIRMATION</span>
+          </div>
+        </div>
+      </div>
+	</header>
+	<main>
+    <div class="shipping-details">
+      <div>
+        <label for="ship-to">Ship to:</label></br>
+        <span>Shipping from Indonesia</span></br>
+        <select name="ship-to" id="ship-to" >
+          <option selected>Hong Kong</option>
+          <option >Tokyo</option>
+          <option >Beijing</option>
+        </select>
+      </div>
+      <div>
+        <label for="category">Category:</label></br>
+        <span>Used to compute taxe & duties</span></br>
+        <select name="category" id="category" >
+          <option selected>Funiture</option>
+          <option >Electronic</option>
+          <option >Clothing</option>
+        </select>
+      </div>
+      <div>
+        <label for="retail-price">Item's retail price:</label></br>
+        <input type="text"  value="302.99" class="price"/>
+        <select name="retail-price" id="retail-price" class="currency">
+          <option selected >USD</option>
+          <option >JYG</option>
+          <option >STP</option>
+        </select>
+      </div>
+      <div>
+        <label>Taxes & Duties payed by:</label></br>
+        <input class="tax payer" type="text" value="Sender">
+        <input class="tax" type="text" value="Receiver">
+      </div>
+      <div id="package-di">
+        <label>Package Dimensions <span>&#40;cm&#41;</span></label></br>
+        <input class="package-di" type="text" value="75">
+        <span>x</span>
+        <input class="package-di" type="text" value="43">
+        <span>x</span>
+        <input class="package-di" type="text" value="67">
+      </div>
+      <div>
+        <label>Package Weight</label></br>
+        <input class="package-we" type="text" value="3.6"><span>kg</span>
+      </div>
+      <span class="choose-courier">
+        <label>Choose your courier</label>
+        <div class="selected-courier">
+          <div class="selected-radio">
+          </div>
+          <div class="service">
+            <p>FedEx Int.</p>
+          </div>
+          <div style="background-image: url('fedex.png');" class="courier-badge">
+          </div>
+          <div class="courier-info">You can still count on the day and time your 
+            shipment arrives in 2-3 Days shipping
+          </div>
+        </div>
+
+        <div>
+          <div class="radio-button">
+          </div>
+          <div class="service">
+            <p>DHL Express</p>
+          </div>
+          <div style="background-image: url('dhl.png');" class="courier-badge">
+          </div>
+        </div>
+      </span>
+    </div>
+	</main>
+  </body>
+</html>
